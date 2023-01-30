@@ -344,9 +344,9 @@ class Ui_MainWindow(object):
             self.result.setText("GET KEYWORD SUCCESS")
         elif value == 40:
             req=requests.get(result['pic'])
-            with open('./temp/'+result["url"].split('v=')[-1]+'.jpg','wb') as f:
+            with open('../temp/'+result["url"].split('v=')[-1]+'.jpg','wb') as f:
                 f.write(req.content)
-            self.PicEdit.setPixmap(QPixmap('./temp/'+result["url"].split('v=')[-1]+'.jpg'))
+            self.PicEdit.setPixmap(QPixmap('../temp/'+result["url"].split('v=')[-1]+'.jpg'))
             self.result.setText("GET PIC SUCCESS,LODING STREAMS NOW")
         elif value == 100:
             self.tableWidget.setRowCount(0)
