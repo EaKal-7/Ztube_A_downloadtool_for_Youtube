@@ -1,5 +1,7 @@
 # Ztube
 
+一款可选择视频清晰度以及分辨率的Youtube下载器
+
 ## 实现效果
 
 ![image-20230123133515647](README.assets/image-20230123133515647.png)
